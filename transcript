@@ -1,0 +1,42 @@
+# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab_chunk_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:33 on Nov 29,2023
+# vlog -reportprogress 300 ./chunk_drawer.sv 
+# -- Compiling module chunk_drawer
+# -- Compiling module chunk_drawer_tb
+# 
+# Top level modules:
+# 	chunk_drawer_tb
+# End time: 16:38:33 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_drawer_tb 
+# Start time: 16:38:33 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.chunk_drawer_tb
+# Loading work.chunk_drawer
+# ** Error: Cannot open macro file: chunk_drawer_wave.do
+# Error in macro ./runlab_chunk_drawer.do line 17
+# Cannot open macro file: chunk_drawer_wave.do
+#     while executing
+# "do chunk_drawer_wave.do"
+add wave -position end  sim:/chunk_drawer_tb/dut/clk
+add wave -position end  sim:/chunk_drawer_tb/dut/reset
+add wave -position end  sim:/chunk_drawer_tb/dut/data_in
+add wave -position end  sim:/chunk_drawer_tb/dut/x_chunk
+add wave -position end  sim:/chunk_drawer_tb/dut/y_chunk
+add wave -position end  sim:/chunk_drawer_tb/dut/x
+add wave -position end  sim:/chunk_drawer_tb/dut/y
+add wave -position end  sim:/chunk_drawer_tb/dut/r
+add wave -position end  sim:/chunk_drawer_tb/dut/g
+add wave -position end  sim:/chunk_drawer_tb/dut/b
+add wave -position end  sim:/chunk_drawer_tb/dut/done
+add wave -position end  sim:/chunk_drawer_tb/dut/count_x
+add wave -position end  sim:/chunk_drawer_tb/dut/count_y
+run -all
+# ** Note: $stop    : ./chunk_drawer.sv(93)
+#    Time: 30150 ps  Iteration: 1  Instance: /chunk_drawer_tb
+# Break in Module chunk_drawer_tb at ./chunk_drawer.sv line 93
+# End time: 16:39:51 on Nov 29,2023, Elapsed time: 0:01:18
+# Errors: 3, Warnings: 0

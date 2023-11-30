@@ -19,6 +19,9 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	logic [9:0] x;
 	logic [8:0] y;
 	logic [7:0] r, g, b;
+	logic [31:0] div_clk;
+	
+	clock_divider cl (.clock(CLOCK_50), .divided_clocks(div_clk));
 	
 	video_driver #(.WIDTH(640), .HEIGHT(480))
 		v1 (.CLOCK_50, .reset, .x, .y, .r, .g, .b,
@@ -27,7 +30,7 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	
 	chunk_drawer #(.CHUNK_SIZE(5'b10000)) 
 		cd (.clk(CLOCK_50), .reset(SW[9]), .data_in(SW[8:7]),
-			 .x_chunk(6'b000100), .y_chunk(5'b00100),
+			 .x_chunk(6'b000000), .y_chunk(5'b00000),
 			 .x, .y, .r, .g, .b, .done(LEDR[0]));
 	
 	assign HEX0 = '1;
