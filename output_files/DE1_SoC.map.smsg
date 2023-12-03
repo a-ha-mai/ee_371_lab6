@@ -1,2 +1,8 @@
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (10034): Output port "LEDR[9..1]" at DE1_SoC.sv(4) has no driver File: C:/Users/Anna/Documents/ee_371_lab6/DE1_SoC.sv Line: 4
+Warning (10034): Output port "LEDR" at DE1_SoC.sv(4) has no driver File: D:/Documents/ee_371_lab6/DE1_SoC.sv Line: 4
+Warning (10030): Net "data_in" at chunk_ctrl.sv(8) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_ctrl.sv Line: 8
+Warning (10030): Net "write_x_chunk" at chunk_ctrl.sv(9) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_ctrl.sv Line: 9
+Warning (10030): Net "ctrl_x_chunk" at chunk_ctrl.sv(9) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_ctrl.sv Line: 9
+Warning (10030): Net "write_y_chunk" at chunk_ctrl.sv(10) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_ctrl.sv Line: 10
+Warning (10030): Net "ctrl_y_chunk" at chunk_ctrl.sv(10) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_ctrl.sv Line: 10
+Warning (10030): Net "stored_pattern[1023..0]" at chunk_memory.sv(13) has no driver or initial value, using a default initial value '0' File: D:/Documents/ee_371_lab6/chunk_memory.sv Line: 13

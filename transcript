@@ -1,42 +1,268 @@
 # Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do runlab_chunk_drawer.do
+do runlab_chunk_ctrl.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:38:33 on Nov 29,2023
+# Start time: 14:54:08 on Dec 02,2023
 # vlog -reportprogress 300 ./chunk_drawer.sv 
 # -- Compiling module chunk_drawer
 # -- Compiling module chunk_drawer_tb
 # 
 # Top level modules:
 # 	chunk_drawer_tb
-# End time: 16:38:33 on Nov 29,2023, Elapsed time: 0:00:00
+# End time: 14:54:08 on Dec 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_drawer_tb 
-# Start time: 16:38:33 on Nov 29,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:08 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_memory.sv 
+# -- Compiling module chunk_memory
+# ** Warning: (vlog-2121) ./chunk_memory.sv(28): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) ./chunk_memory.sv(29): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	chunk_memory
+# End time: 14:54:09 on Dec 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:09 on Dec 02,2023
+# vlog -reportprogress 300 ./incrementor.sv 
+# -- Compiling module incrementor
+# 
+# Top level modules:
+# 	incrementor
+# End time: 14:54:09 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_ctrl_tb 
+# Start time: 14:54:09 on Dec 02,2023
+# ** Error: (vsim-3170) Could not find 'chunk_ctrl_tb'.
+#         Searched libraries:
+#             D:/Documents/ee_371_lab6/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_chunk_ctrl.do PAUSED at line 14
+do runlab_chunk_ctrl.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:42 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_drawer.sv 
+# -- Compiling module chunk_drawer
+# -- Compiling module chunk_drawer_tb
+# 
+# Top level modules:
+# 	chunk_drawer_tb
+# End time: 14:54:42 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:42 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_memory.sv 
+# -- Compiling module chunk_memory
+# ** Warning: (vlog-2121) ./chunk_memory.sv(28): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) ./chunk_memory.sv(29): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	chunk_memory
+# End time: 14:54:42 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:42 on Dec 02,2023
+# vlog -reportprogress 300 ./incrementor.sv 
+# -- Compiling module incrementor
+# 
+# Top level modules:
+# 	incrementor
+# End time: 14:54:42 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_ctrl_tb 
+# Start time: 14:54:09 on Dec 02,2023
+# ** Error: (vsim-3170) Could not find 'chunk_ctrl_tb'.
+#         Searched libraries:
+#             D:/Documents/ee_371_lab6/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_chunk_ctrl.do PAUSED at line 14
+do runlab_chunk_ctrl.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:15 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_drawer.sv 
+# -- Compiling module chunk_drawer
+# -- Compiling module chunk_drawer_tb
+# 
+# Top level modules:
+# 	chunk_drawer_tb
+# End time: 14:55:15 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:15 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_memory.sv 
+# -- Compiling module chunk_memory
+# ** Warning: (vlog-2121) ./chunk_memory.sv(28): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) ./chunk_memory.sv(29): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	chunk_memory
+# End time: 14:55:15 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:15 on Dec 02,2023
+# vlog -reportprogress 300 ./incrementor.sv 
+# -- Compiling module incrementor
+# 
+# Top level modules:
+# 	incrementor
+# End time: 14:55:15 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:15 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_ctrl.sv 
+# -- Compiling module chunk_ctrl
+# ** Error: ./chunk_ctrl.sv(23): (vlog-2730) Undefined variable: 'done'.
+# -- Compiling module chunk_ctrl_tb
+# End time: 14:55:15 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_chunk_ctrl.do line 10
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./chunk_ctrl.sv""
+do runlab_chunk_ctrl.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:29 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_drawer.sv 
+# -- Compiling module chunk_drawer
+# -- Compiling module chunk_drawer_tb
+# 
+# Top level modules:
+# 	chunk_drawer_tb
+# End time: 14:55:29 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:29 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_memory.sv 
+# -- Compiling module chunk_memory
+# ** Warning: (vlog-2121) ./chunk_memory.sv(28): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) ./chunk_memory.sv(29): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	chunk_memory
+# End time: 14:55:29 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:30 on Dec 02,2023
+# vlog -reportprogress 300 ./incrementor.sv 
+# -- Compiling module incrementor
+# 
+# Top level modules:
+# 	incrementor
+# End time: 14:55:30 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:30 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_ctrl.sv 
+# -- Compiling module chunk_ctrl
+# -- Compiling module chunk_ctrl_tb
+# 
+# Top level modules:
+# 	chunk_ctrl_tb
+# End time: 14:55:30 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_ctrl_tb 
+# Start time: 14:54:09 on Dec 02,2023
 # Loading sv_std.std
-# Loading work.chunk_drawer_tb
+# Loading work.chunk_ctrl_tb
+# Loading work.chunk_ctrl
 # Loading work.chunk_drawer
+# Loading work.chunk_memory
+# Loading work.incrementor
 # ** Error: Cannot open macro file: chunk_drawer_wave.do
-# Error in macro ./runlab_chunk_drawer.do line 17
+# Error in macro ./runlab_chunk_ctrl.do line 20
 # Cannot open macro file: chunk_drawer_wave.do
 #     while executing
 # "do chunk_drawer_wave.do"
-add wave -position end  sim:/chunk_drawer_tb/dut/clk
-add wave -position end  sim:/chunk_drawer_tb/dut/reset
-add wave -position end  sim:/chunk_drawer_tb/dut/data_in
-add wave -position end  sim:/chunk_drawer_tb/dut/x_chunk
-add wave -position end  sim:/chunk_drawer_tb/dut/y_chunk
-add wave -position end  sim:/chunk_drawer_tb/dut/x
-add wave -position end  sim:/chunk_drawer_tb/dut/y
-add wave -position end  sim:/chunk_drawer_tb/dut/r
-add wave -position end  sim:/chunk_drawer_tb/dut/g
-add wave -position end  sim:/chunk_drawer_tb/dut/b
-add wave -position end  sim:/chunk_drawer_tb/dut/done
-add wave -position end  sim:/chunk_drawer_tb/dut/count_x
-add wave -position end  sim:/chunk_drawer_tb/dut/count_y
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_x_chunk
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_y_chunk
+add wave -position 0  sim:/chunk_ctrl_tb/dut/clk
+add wave -position 1  sim:/chunk_ctrl_tb/dut/reset
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_done
+add wave -position end  sim:/chunk_ctrl_tb/dut/load_drawer
 run -all
-# ** Note: $stop    : ./chunk_drawer.sv(93)
-#    Time: 30150 ps  Iteration: 1  Instance: /chunk_drawer_tb
-# Break in Module chunk_drawer_tb at ./chunk_drawer.sv line 93
-# End time: 16:39:51 on Nov 29,2023, Elapsed time: 0:01:18
-# Errors: 3, Warnings: 0
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 12 of file "chunk_memory.mif". (Current address [11], address range [0:10])    : ./chunk_memory.sv(16)
+#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut/mem
+# ** Note: $stop    : ./chunk_ctrl.sv(44)
+#    Time: 30150 ps  Iteration: 1  Instance: /chunk_ctrl_tb
+# Break in Module chunk_ctrl_tb at ./chunk_ctrl.sv line 44
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_out
+do runlab_chunk_ctrl.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:35 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_drawer.sv 
+# -- Compiling module chunk_drawer
+# -- Compiling module chunk_drawer_tb
+# 
+# Top level modules:
+# 	chunk_drawer_tb
+# End time: 14:57:35 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:35 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_memory.sv 
+# -- Compiling module chunk_memory
+# ** Warning: (vlog-2121) ./chunk_memory.sv(28): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) ./chunk_memory.sv(29): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	chunk_memory
+# End time: 14:57:35 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:35 on Dec 02,2023
+# vlog -reportprogress 300 ./incrementor.sv 
+# -- Compiling module incrementor
+# 
+# Top level modules:
+# 	incrementor
+# End time: 14:57:35 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:35 on Dec 02,2023
+# vlog -reportprogress 300 ./chunk_ctrl.sv 
+# -- Compiling module chunk_ctrl
+# -- Compiling module chunk_ctrl_tb
+# 
+# Top level modules:
+# 	chunk_ctrl_tb
+# End time: 14:57:35 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:57:36 on Dec 02,2023, Elapsed time: 0:03:27
+# Errors: 5, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work chunk_ctrl_tb 
+# Start time: 14:57:36 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.chunk_ctrl_tb
+# Loading work.chunk_ctrl
+# Loading work.chunk_drawer
+# Loading work.chunk_memory
+# Loading work.incrementor
+# ** Error: Cannot open macro file: chunk_drawer_wave.do
+# Error in macro ./runlab_chunk_ctrl.do line 20
+# Cannot open macro file: chunk_drawer_wave.do
+#     while executing
+# "do chunk_drawer_wave.do"
+add wave -position end  sim:/chunk_ctrl_tb/dut/clk
+add wave -position end  sim:/chunk_ctrl_tb/dut/reset
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_out
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_x_chunk
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_y_chunk
+add wave -position end  sim:/chunk_ctrl_tb/dut/draw_done
+add wave -position end  sim:/chunk_ctrl_tb/dut/load_drawer
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 12 of file "chunk_memory.mif". (Current address [11], address range [0:10])    : ./chunk_memory.sv(16)
+#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut/mem
+# ** Note: $stop    : ./chunk_ctrl.sv(43)
+#    Time: 30150 ps  Iteration: 1  Instance: /chunk_ctrl_tb
+# Break in Module chunk_ctrl_tb at ./chunk_ctrl.sv line 43
+# End time: 14:58:15 on Dec 02,2023, Elapsed time: 0:00:39
+# Errors: 3, Warnings: 1

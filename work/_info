@@ -8,35 +8,35 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Documents/ee_371_lab6
-vchunk_drawer
+vchunk_ctrl
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1701304713
+Z2 !s110 1701557855
 !i10b 1
-!s100 >mADN:c<hBMkmRj^nkCg;2
-I1<57l[A1S06NR=Iz]aXcg1
+!s100 GFI@;V:Y8_`2:AA]eCIBX3
+IYec[;9?4fDm=eD[4>8SgZ0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 chunk_drawer_sv_unit
+Z4 !s105 chunk_ctrl_sv_unit
 S1
 R0
-Z5 w1701304684
-Z6 8./chunk_drawer.sv
-Z7 F./chunk_drawer.sv
+Z5 w1701557818
+Z6 8./chunk_ctrl.sv
+Z7 F./chunk_ctrl.sv
 L0 1
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1701304713.000000
-Z10 !s107 ./chunk_drawer.sv|
-Z11 !s90 -reportprogress|300|./chunk_drawer.sv|
+Z9 !s108 1701557855.000000
+Z10 !s107 ./chunk_ctrl.sv|
+Z11 !s90 -reportprogress|300|./chunk_ctrl.sv|
 !i113 1
 Z12 tCvgOpt 0
-vchunk_drawer_tb
+vchunk_ctrl_tb
 R1
 R2
 !i10b 1
-!s100 ikmboGlLYQ73hn6fUISk]1
-I;A:TdhzP`l];4m1G4QWXm3
+!s100 7H@S@Rc@HgOCWI49YNZ?o2
+IMko@VczQZ`hCVXS3aBIOl0
 R3
 R4
 S1
@@ -44,7 +44,7 @@ R0
 R5
 R6
 R7
-L0 68
+L0 25
 R8
 r1
 !s85 0
@@ -52,5 +52,97 @@ r1
 R9
 R10
 R11
+!i113 1
+R12
+vchunk_drawer
+R1
+R2
+!i10b 1
+!s100 >mADN:c<hBMkmRj^nkCg;2
+I1<57l[A1S06NR=Iz]aXcg1
+R3
+Z13 !s105 chunk_drawer_sv_unit
+S1
+R0
+Z14 w1701551040
+Z15 8./chunk_drawer.sv
+Z16 F./chunk_drawer.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z17 !s107 ./chunk_drawer.sv|
+Z18 !s90 -reportprogress|300|./chunk_drawer.sv|
+!i113 1
+R12
+vchunk_drawer_tb
+R1
+R2
+!i10b 1
+!s100 ikmboGlLYQ73hn6fUISk]1
+I;A:TdhzP`l];4m1G4QWXm3
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 68
+R8
+r1
+!s85 0
+31
+R9
+R17
+R18
+!i113 1
+R12
+vchunk_memory
+R1
+R2
+!i10b 1
+!s100 WE`dPKEV;lYU<?iH^bniQ1
+IgI0bUYP@klijV3oFMQ15i3
+R3
+!s105 chunk_memory_sv_unit
+S1
+R0
+w1701557820
+8./chunk_memory.sv
+F./chunk_memory.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./chunk_memory.sv|
+!s90 -reportprogress|300|./chunk_memory.sv|
+!i113 1
+R12
+vincrementor
+R1
+R2
+!i10b 1
+!s100 [Ml6>WULhPgKC5kMNo=o63
+IFJOa=>QR5j@@iEPI422KR2
+R3
+!s105 incrementor_sv_unit
+S1
+R0
+w1701555226
+8./incrementor.sv
+F./incrementor.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./incrementor.sv|
+!s90 -reportprogress|300|./incrementor.sv|
 !i113 1
 R12

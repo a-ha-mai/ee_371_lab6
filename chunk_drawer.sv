@@ -21,11 +21,11 @@ module chunk_drawer #(parameter CHUNK_SIZE=16) (clk, reset, data_in, x_chunk, y_
 			x <= (x_chunk * CHUNK_SIZE) + count_x;
 			y <= (y_chunk * CHUNK_SIZE) + count_y;
 		
-		    if (count_x < 4'b1111 & count_y < 4'b1111) count_x <= count_x + 1;
-		    else if (count_x == 4'b1111 & count_y < 4'b1111) begin
-		        count_y <= count_y + 1;
-		        count_x <= 4'b0000;
-		    end else done <= 1'b1;
+			if (count_x < 4'b1111 & count_y < 4'b1111) count_x <= count_x + 1;
+			else if (count_x == 4'b1111 & count_y < 4'b1111) begin
+				count_y <= count_y + 1;
+				count_x <= 4'b0000;
+			end else done <= 1'b1;
 			
 			case (data_in)
 				2'b00: begin

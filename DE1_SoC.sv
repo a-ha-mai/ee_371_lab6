@@ -14,24 +14,25 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	output VGA_HS;
 	output VGA_SYNC_N;
 	output VGA_VS;
+	
+	parameter CHUNK_SIZE = 16;
 
-	logic reset;
+	logic reset, load_drawer, draw_done;
 	logic [9:0] x;
 	logic [8:0] y;
 	logic [7:0] r, g, b;
-	logic [31:0] div_clk;
 	
-	clock_divider cl (.clock(CLOCK_50), .divided_clocks(div_clk));
+
+	
+	// temp
+	logic done;
 	
 	video_driver #(.WIDTH(640), .HEIGHT(480))
-		v1 (.CLOCK_50, .reset, .x, .y, .r, .g, .b,
+		vid (.CLOCK_50, .reset, .x, .y, .r, .g, .b,
 			 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
 			 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 	
-	chunk_drawer #(.CHUNK_SIZE(5'b10000)) 
-		cd (.clk(CLOCK_50), .reset(SW[9]), .data_in(SW[8:7]),
-			 .x_chunk(6'b000000), .y_chunk(5'b00000),
-			 .x, .y, .r, .g, .b, .done(LEDR[0]));
+	chunk_ctrl cc (.clk(CLOCK_50), .chunk_reset(SW[9]), .x, .y, .r, .g, .b);
 	
 	assign HEX0 = '1;
 	assign HEX1 = '1;

@@ -1,0 +1,330 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/ee_371_lab6/simulation/modelsim
+valtera_up_avalon_video_vga_timing
+Z1 !s110 1701567922
+!i10b 1
+!s100 d_[b<b>^^KQS=2DZ=dMJ;0
+I;RzcRCfRUB=7lf[oH4_ha0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1701295901
+8D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
+FD:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
+L0 47
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1701567922.000000
+!s107 D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Documents/ee_371_lab6
+Z6 tCvgOpt 0
+vchunk_ctrl
+Z7 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 B7zLnGPCOb`zf28hIIII[2
+Ih`Zz@?nPIU[JIZSf[0=L?0
+R2
+Z8 !s105 chunk_ctrl_sv_unit
+S1
+R0
+Z9 w1701567880
+Z10 8D:/Documents/ee_371_lab6/chunk_ctrl.sv
+Z11 FD:/Documents/ee_371_lab6/chunk_ctrl.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 D:/Documents/ee_371_lab6/chunk_ctrl.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/chunk_ctrl.sv|
+!i113 1
+Z14 o-sv -work work
+Z15 !s92 -sv -work work +incdir+D:/Documents/ee_371_lab6
+R6
+vchunk_ctrl_tb
+R7
+R1
+!i10b 1
+!s100 nEEKd_;Ken]inWIFDFIhR1
+Ijo7W<^RfY<K3iJ]2dfm:P3
+R2
+R8
+S1
+R0
+R9
+R10
+R11
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R14
+R15
+R6
+vchunk_drawer
+R7
+R1
+!i10b 1
+!s100 >mADN:c<hBMkmRj^nkCg;2
+IeX0hYQSMN7FaMSKm5g:F01
+R2
+Z16 !s105 chunk_drawer_sv_unit
+S1
+R0
+Z17 w1701567676
+Z18 8D:/Documents/ee_371_lab6/chunk_drawer.sv
+Z19 FD:/Documents/ee_371_lab6/chunk_drawer.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z20 !s107 D:/Documents/ee_371_lab6/chunk_drawer.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/chunk_drawer.sv|
+!i113 1
+R14
+R15
+R6
+vchunk_drawer_tb
+R7
+R1
+!i10b 1
+!s100 ikmboGlLYQ73hn6fUISk]1
+IgS`]YASb65Q@5S;ji<Ra20
+R2
+R16
+S1
+R0
+R17
+R18
+R19
+L0 68
+R4
+r1
+!s85 0
+31
+R5
+R20
+R21
+!i113 1
+R14
+R15
+R6
+vchunk_memory
+R7
+R1
+!i10b 1
+!s100 YK>;I71MVe^Ph4J_WUVbX1
+IV`@<8lZf;X_UcSkL>RiSK3
+R2
+Z22 !s105 chunk_memory_sv_unit
+S1
+R0
+Z23 w1701567050
+Z24 8D:/Documents/ee_371_lab6/chunk_memory.sv
+Z25 FD:/Documents/ee_371_lab6/chunk_memory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z26 !s107 D:/Documents/ee_371_lab6/chunk_memory.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/chunk_memory.sv|
+!i113 1
+R14
+R15
+R6
+vchunk_memory_tb
+R7
+R1
+!i10b 1
+!s100 @TK0Xd]KL5ea=izhcI>NE1
+IefPH]UZPb;hlQCcnPO[gE2
+R2
+R22
+S1
+R0
+R23
+R24
+R25
+L0 36
+R4
+r1
+!s85 0
+31
+R5
+R26
+R27
+!i113 1
+R14
+R15
+R6
+vCLOCK25_PLL
+R1
+!i10b 1
+!s100 [5VdkhTLeY18Wo>i2WMHD3
+I7]@V0TeAfYk@YWc_7f=OO0
+R2
+R0
+R3
+8D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo
+FD:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo|
+!s90 -reportprogress|300|D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo|
+!i113 1
+R6
+n@c@l@o@c@k25_@p@l@l
+vDE1_SoC
+R7
+R1
+!i10b 1
+!s100 nkd:R<3]Rc8NI_YecQB[[0
+IFV9D7T6[IeemFQnz2Wn4b1
+R2
+Z28 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z29 w1701567663
+Z30 8D:/Documents/ee_371_lab6/DE1_SoC.sv
+Z31 FD:/Documents/ee_371_lab6/DE1_SoC.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z32 !s107 D:/Documents/ee_371_lab6/DE1_SoC.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/DE1_SoC.sv|
+!i113 1
+R14
+R15
+R6
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R7
+R1
+!i10b 1
+!s100 Ri?2;6fH;2XnmFTHoXIB83
+I7fa_MTYm`9VM]OoE3GFhV3
+R2
+R28
+S1
+R0
+R29
+R30
+R31
+L0 49
+R4
+r1
+!s85 0
+31
+R5
+R32
+R33
+!i113 1
+R14
+R15
+R6
+n@d@e1_@so@c_testbench
+vincrementor
+R7
+R1
+!i10b 1
+!s100 NnPIVUF4`oF6>Nmg1RGj[1
+I:?zheMBlB];d@Aja18_@c0
+R2
+Z34 !s105 incrementor_sv_unit
+S1
+R0
+Z35 w1701567281
+Z36 8D:/Documents/ee_371_lab6/incrementor.sv
+Z37 FD:/Documents/ee_371_lab6/incrementor.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z38 !s107 D:/Documents/ee_371_lab6/incrementor.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/incrementor.sv|
+!i113 1
+R14
+R15
+R6
+vincrementor_tb
+R7
+R1
+!i10b 1
+!s100 =]@=No=A@GiD9hQKQZ8aY1
+I3>A[[?QT=3=C@zZTMzYz60
+R2
+R34
+S1
+R0
+R35
+R36
+R37
+L0 27
+R4
+r1
+!s85 0
+31
+R5
+R38
+R39
+!i113 1
+R14
+R15
+R6
+vvideo_driver
+R7
+R1
+!i10b 1
+!s100 K3bT@:gm:TXKLG@DE15ZA3
+IjS01<blIakJ^WzbYnVOA`2
+R2
+!s105 video_driver_sv_unit
+S1
+R0
+R3
+8D:/Documents/ee_371_lab6/video_driver.sv
+FD:/Documents/ee_371_lab6/video_driver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Documents/ee_371_lab6/video_driver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/video_driver.sv|
+!i113 1
+R14
+R15
+R6
