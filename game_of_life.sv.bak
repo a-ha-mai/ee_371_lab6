@@ -1,0 +1,48 @@
+module game_of_life (clk, reset, enable, current_frame, next_frame);
+	input logic enable;
+	input logic [1199:0] current_frame;
+	output logic [1199:0] next_frame;
+	output logic done;
+	
+	logic alive_check;
+	logic [2:0] result;
+	logic [7:0] adj_cells;
+	logic [10:0] counter;
+	logic [1199:0] buffer_frame;
+	
+	ones_counter oc (.clk, .reset, .s(alive_check), .A_val(adj_cells), .done, .result)
+	
+	assign adj_cells = {current_frame[counter - 41], current_frame[counter - 40], current_frame[counter - 39],
+							  current_frame[counter - 1], current_frame[counter + 1],
+							  current_frame[counter + 39], current_frame[counter + 40], current_frame[counter + 41]};
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			buffer_frame <= current_frame
+			next_frame <= current_frame;
+			alive_check <= 1'b0;
+			counter <= 11'b0;
+		end else if (enable) begin
+			if (~done) alive_check <= 1'b1;
+			else begin
+				alive_check <= 1'b0;
+				if (counter < 11'b10010110000) counter <= counter + 1'b1;
+				else begin
+					counter <= 11'b0;
+					next_frame <= buffer_frame;
+				end
+				if (current_frame[counter]) begin
+					if (result < 3'b010 | result > 3'b011) buffer_frame[counter] <= 1'b0;
+					else next_frame[counter] <= 1'b1;
+				end else begin
+					if (result == 3'b011) buffer_frame[counter] <= 1'b1;
+				end
+			end
+		end else begin
+			buffer_frame <= current_frame;
+			next_frame <= current_frame;
+			alive_check <= 1'b0;
+			counter <= 11'b0;
+		end
+	end
+endmodule

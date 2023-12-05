@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Documents/ee_371_lab6/simulation/modelsim
 valtera_up_avalon_video_vga_timing
-Z1 !s110 1701662922
+Z1 !s110 1701761351
 !i10b 1
 !s100 d_[b<b>^^KQS=2DZ=dMJ;0
 I;RzcRCfRUB=7lf[oH4_ha0
@@ -23,40 +23,15 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1701662922.000000
+Z4 !s108 1701761351.000000
 !s107 D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v|
 !i113 1
 o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+D:/Documents/ee_371_lab6
 Z5 tCvgOpt 0
-vchunk_memory
-Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-R1
-!i10b 1
-!s100 <`eMCj@U9]bQHDol1cGIz1
-IRb6D_<I3OC?=Z45RB9WzM1
-R2
-!s105 chunk_memory_sv_unit
-S1
-R0
-w1701662888
-8D:/Documents/ee_371_lab6/chunk_memory.sv
-FD:/Documents/ee_371_lab6/chunk_memory.sv
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 D:/Documents/ee_371_lab6/chunk_memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/chunk_memory.sv|
-!i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+D:/Documents/ee_371_lab6
-R5
 vCLOCK25_PLL
-R1
+!s110 1701761350
 !i10b 1
 !s100 [5VdkhTLeY18Wo>i2WMHD3
 I7]@V0TeAfYk@YWc_7f=OO0
@@ -70,14 +45,14 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1701761350.000000
 !s107 D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo|
 !s90 -reportprogress|300|D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo|
 !i113 1
 R5
 n@c@l@o@c@k25_@p@l@l
 vclock_divider
-R6
+Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R1
 !i10b 1
 !s100 ;;cR1iFKl;SYA5AjF[83c3
@@ -98,20 +73,20 @@ R4
 !s107 D:/Documents/ee_371_lab6/clock_divider.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/clock_divider.sv|
 !i113 1
-R7
-R8
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/Documents/ee_371_lab6
 R5
 vDE1_SoC
 R6
 R1
 !i10b 1
-!s100 ZogFz6boS;zXe<^<GB<1;3
-IB^F3K?K@?dVJFcjY=ZhR32
+!s100 4JZQgYkmHK75Ak2O434QY3
+IYkngYzB8;S[TSWoRHK7V50
 R2
 Z9 !s105 DE1_SoC_sv_unit
 S1
 R0
-Z10 w1701662864
+Z10 w1701761247
 Z11 8D:/Documents/ee_371_lab6/DE1_SoC.sv
 Z12 FD:/Documents/ee_371_lab6/DE1_SoC.sv
 L0 1
@@ -131,8 +106,8 @@ vDE1_SoC_testbench
 R6
 R1
 !i10b 1
-!s100 1eDW4Qoh<2lTSPCfG5z0i2
-IjYCzU?E;P5XDSDF8FJ[bP2
+!s100 ?QFV1a2ON7@NR5@@2E`0g3
+Ig`O]4Z^MlZP?>EWef@jWI3
 R2
 R9
 S1
@@ -140,7 +115,7 @@ R0
 R10
 R11
 R12
-L0 51
+L0 64
 R3
 r1
 !s85 0
@@ -153,6 +128,206 @@ R7
 R8
 R5
 n@d@e1_@so@c_testbench
+vgame_of_life
+R6
+R1
+!i10b 1
+!s100 Ai5BB`:Qz29ThGbn2c_8Q2
+IW_h^1Z:nm^Ok[dl90kkRB3
+R2
+Z15 !s105 game_of_life_sv_unit
+S1
+R0
+Z16 w1701755618
+Z17 8D:/Documents/ee_371_lab6/game_of_life.sv
+Z18 FD:/Documents/ee_371_lab6/game_of_life.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z19 !s107 D:/Documents/ee_371_lab6/game_of_life.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/game_of_life.sv|
+!i113 1
+R7
+R8
+R5
+vgom_testbench
+R6
+R1
+!i10b 1
+!s100 6^hBS_`C2a0P@H@Tbgjh_3
+I2>@77GY;]Fz09Jc<P2kEz1
+R2
+R15
+S1
+R0
+R16
+R17
+R18
+L0 60
+R3
+r1
+!s85 0
+31
+R4
+R19
+R20
+!i113 1
+R7
+R8
+R5
+vones_counter
+R6
+R1
+!i10b 1
+!s100 :jN5HOezo?0@J?^KKD[RO0
+IVI57R5ZjjYZX1^g<c1HSl2
+R2
+Z21 !s105 ones_counter_sv_unit
+S1
+R0
+Z22 w1701745480
+Z23 8D:/Documents/ee_371_lab6/ones_counter.sv
+Z24 FD:/Documents/ee_371_lab6/ones_counter.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z25 !s107 D:/Documents/ee_371_lab6/ones_counter.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/ones_counter.sv|
+!i113 1
+R7
+R8
+R5
+vones_counter_controller
+R6
+R1
+!i10b 1
+!s100 4]DbVAR;C=M7ebCeX]b]X1
+I4ghK?TZC:Q_eoW=6d16Ii1
+R2
+!s105 ones_counter_controller_sv_unit
+S1
+R0
+w1701741619
+8D:/Documents/ee_371_lab6/ones_counter_controller.sv
+FD:/Documents/ee_371_lab6/ones_counter_controller.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents/ee_371_lab6/ones_counter_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/ones_counter_controller.sv|
+!i113 1
+R7
+R8
+R5
+vones_counter_datapath
+R6
+R1
+!i10b 1
+!s100 IcV7BCeS[mMZHFhGDIShb2
+IfWW_=Q0aDW`8FS<lSkn>i1
+R2
+!s105 ones_counter_datapath_sv_unit
+S1
+R0
+w1701741624
+8D:/Documents/ee_371_lab6/ones_counter_datapath.sv
+FD:/Documents/ee_371_lab6/ones_counter_datapath.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Documents/ee_371_lab6/ones_counter_datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/ones_counter_datapath.sv|
+!i113 1
+R7
+R8
+R5
+vones_counter_tb
+R6
+R1
+!i10b 1
+!s100 KJ26DX4]eZfF30SCe6MB01
+IY4[^B2Nf<n0PN56UdRW2[1
+R2
+R21
+S1
+R0
+R22
+R23
+R24
+L0 22
+R3
+r1
+!s85 0
+31
+R4
+R25
+R26
+!i113 1
+R7
+R8
+R5
+vpixel_memory
+R6
+R1
+!i10b 1
+!s100 fczAC>SW0`R=;cNFEZHcK0
+ITF[o6oReVTnEPI5hNg:IF1
+R2
+Z27 !s105 pixel_memory_sv_unit
+S1
+R0
+Z28 w1701760925
+Z29 8D:/Documents/ee_371_lab6/pixel_memory.sv
+Z30 FD:/Documents/ee_371_lab6/pixel_memory.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z31 !s107 D:/Documents/ee_371_lab6/pixel_memory.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371_lab6|D:/Documents/ee_371_lab6/pixel_memory.sv|
+!i113 1
+R7
+R8
+R5
+vpixel_memory_tb
+R6
+R1
+!i10b 1
+!s100 kgK[OTD?LBU<eVc8[]mO^0
+ISGkzFajW7e6@0Un22YeJc2
+R2
+R27
+S1
+R0
+R28
+R29
+R30
+L0 36
+R3
+r1
+!s85 0
+31
+R4
+R31
+R32
+!i113 1
+R7
+R8
+R5
 vvideo_driver
 R6
 R1

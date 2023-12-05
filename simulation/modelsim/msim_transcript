@@ -21,80 +21,127 @@
 # 
 # vlog "D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
+# Start time: 23:29:10 on Dec 04,2023
 # vlog -reportprogress 300 D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo 
 # -- Compiling module CLOCK25_PLL
 # 
 # Top level modules:
 # 	CLOCK25_PLL
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 23:29:10 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
+# Start time: 23:29:11 on Dec 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v 
 # -- Compiling module altera_up_avalon_video_vga_timing
 # 
 # Top level modules:
 # 	altera_up_avalon_video_vga_timing
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/ones_counter_datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:29:11 on Dec 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/ones_counter_datapath.sv 
+# -- Compiling module ones_counter_datapath
+# 
+# Top level modules:
+# 	ones_counter_datapath
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/ones_counter_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:29:11 on Dec 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/ones_counter_controller.sv 
+# -- Compiling module ones_counter_controller
+# 
+# Top level modules:
+# 	ones_counter_controller
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/clock_divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
+# Start time: 23:29:11 on Dec 04,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/clock_divider.sv 
 # -- Compiling module clock_divider
 # 
 # Top level modules:
 # 	clock_divider
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/chunk_memory.sv}
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/ones_counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/chunk_memory.sv 
-# -- Compiling module chunk_memory
+# Start time: 23:29:11 on Dec 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/ones_counter.sv 
+# -- Compiling module ones_counter
+# -- Compiling module ones_counter_tb
 # 
 # Top level modules:
-# 	chunk_memory
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# 	ones_counter_tb
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/game_of_life.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:29:11 on Dec 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/game_of_life.sv 
+# -- Compiling module game_of_life
+# -- Compiling module gom_testbench
+# 
+# Top level modules:
+# 	gom_testbench
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/pixel_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:29:11 on Dec 04,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/pixel_memory.sv 
+# -- Compiling module pixel_memory
+# -- Compiling module pixel_memory_tb
+# 
+# Top level modules:
+# 	pixel_memory_tb
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/video_driver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
+# Start time: 23:29:11 on Dec 04,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/video_driver.sv 
 # -- Compiling module video_driver
 # 
 # Top level modules:
 # 	video_driver
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/DE1_SoC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:08:42 on Dec 03,2023
+# Start time: 23:29:11 on Dec 04,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SoC_testbench
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
+# End time: 23:29:11 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_lnsim
 # vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_lnsim 
-# Start time: 20:09:12 on Dec 03,2023
+# Start time: 23:29:29 on Dec 04,2023
 # Loading sv_std.std
 # Loading work.DE1_SoC_testbench
 # Loading work.DE1_SoC
-# Loading work.clock_divider
 # Loading work.video_driver
 # Loading work.CLOCK25_PLL
 # Loading altera_lnsim.altera_lnsim_functions
 # Loading altera_lnsim.altera_pll
 # Loading work.altera_up_avalon_video_vga_timing
-# Loading work.chunk_memory
+# Loading work.pixel_memory
+# Loading work.clock_divider
+# Loading work.game_of_life
+# Loading work.ones_counter
+# Loading work.ones_counter_controller
+# Loading work.ones_counter_datapath
 # Loading altera_lnsim.dps_extra_kick
 # Loading altera_lnsim.dprio_init
 # Loading altera_lnsim.altera_generic_pll_functions
@@ -128,17 +175,13 @@ vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_lnsim
 #    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/video File: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
 # ** Warning: (vsim-3015) D:/Documents/ee_371_lab6/video_driver.sv(119): [PCDPC] - Port size (10) does not match connection size (8) for port 'vga_blue'. The port definition is at: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v(73).
 #    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/video File: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
-add wave -position end  sim:/DE1_SoC_testbench/dut/vid/x
-add wave -position end  sim:/DE1_SoC_testbench/dut/vid/y
-add wave -position 0  sim:/DE1_SoC_testbench/dut/vid/reset
-add wave -position 0  sim:/DE1_SoC_testbench/dut/vid/CLOCK_50
-add wave -position end  sim:/DE1_SoC_testbench/dut/cm/r
-add wave -position end  sim:/DE1_SoC_testbench/dut/cm/g
-add wave -position end  sim:/DE1_SoC_testbench/dut/cm/b
-add wave -position 4  sim:/DE1_SoC_testbench/dut/cm/draw_x_chunk
-add wave -position 5  sim:/DE1_SoC_testbench/dut/cm/draw_y_chunk
-add wave -position 2  sim:/DE1_SoC_testbench/dut/cm/clk
-add wave -position 3  sim:/DE1_SoC_testbench/dut/cm/reset
+add wave -position end  sim:/DE1_SoC_testbench/dut/data_out
+add wave -position end  sim:/DE1_SoC_testbench/dut/x
+add wave -position end  sim:/DE1_SoC_testbench/dut/y
+add wave -position end  sim:/DE1_SoC_testbench/dut/r
+add wave -position end  sim:/DE1_SoC_testbench/dut/g
+add wave -position end  sim:/DE1_SoC_testbench/dut/b
+add wave -position 0  sim:/DE1_SoC_testbench/dut/CLOCK_50
 run -all
 # Info: =================================================
 # Info:           Generic PLL Summary
@@ -154,8 +197,8 @@ run -all
 # Info: output_clock_low_period = 20000.000000
 # Info: hierarchical_name = DE1_SoC_testbench.dut.vid.c25_gen.clock25_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
-# ** Note: $stop    : D:/Documents/ee_371_lab6/DE1_SoC.sv(75)
-#    Time: 100450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
-# Break in Module DE1_SoC_testbench at D:/Documents/ee_371_lab6/DE1_SoC.sv line 75
-# End time: 20:51:31 on Dec 03,2023, Elapsed time: 0:42:19
+# ** Note: $stop    : D:/Documents/ee_371_lab6/DE1_SoC.sv(88)
+#    Time: 10000450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at D:/Documents/ee_371_lab6/DE1_SoC.sv line 88
+# End time: 23:29:56 on Dec 04,2023, Elapsed time: 0:00:27
 # Errors: 0, Warnings: 25

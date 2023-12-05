@@ -16,23 +16,42 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	output VGA_VS;
 	
 	parameter CHUNK_SIZE = 16;
-
-	logic draw_done;
+	
+	logic data_out, enable;
 	logic [9:0] x;
 	logic [8:0] y;
 	logic [7:0] r, g, b;
 	logic [31:0] div_clk;
 	
-	logic [1:0] data_in;
-	
-	clock_divider div (.clock(CLOCK_50), .divided_clocks(div_clk));
+	clock_divider div (.clock(clk), .divided_clocks(div_clk));
 	
 	video_driver #(.WIDTH(40), .HEIGHT(30))
-		vid (.CLOCK_50, .reset(SW[9]), .x, .y, .r, .g, .b,
+		vid (.CLOCK_50(CLOCK_50), .reset(1'b0), .x, .y, .r, .g, .b,
 			 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
 			 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 	
-	pixel_memory pm (.clk(CLOCK_50), .reset(SW[9]), .x, .y, .r, .g, .b);
+	pixel_memory pm (.clk(CLOCK_50), .reset(SW[9]), .enable(SW[8]), .x, .y, .data_out);
+	
+	
+	always_comb begin
+		case (data_out)
+			1'b0: begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'h00;
+			end
+			1'b1: begin
+				r = 8'hB2;
+				g = 8'hE1;
+				b = 8'hF2;
+			end
+			default: begin
+				r = 8'h00;
+				g = 8'h00;
+				b = 8'h00;
+			end
+		endcase
+	end
 	
 	assign HEX0 = '1;
 	assign HEX1 = '1;
@@ -67,9 +86,9 @@ module DE1_SoC_testbench ();
 	// simulated inputs
 	initial begin
 		@(posedge CLOCK_50);
-		SW[9] <= 1'b1; repeat (3) @(posedge CLOCK_50);
-		SW[9] <= 1'b0; @(posedge CLOCK_50);
-		repeat (1000) @(posedge CLOCK_50);
+		SW[8] <= 1'b0; SW[9] <= 1'b1; repeat (3) @(posedge CLOCK_50);
+		SW[8] <= 1'b1; SW[9] <= 1'b0; @(posedge CLOCK_50);
+		repeat (100000) @(posedge CLOCK_50);
 		$stop();
 	end  // inputs initial
 	
