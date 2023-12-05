@@ -17,22 +17,22 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	
 	parameter CHUNK_SIZE = 16;
 
-	logic reset, load_drawer, draw_done;
+	logic draw_done;
 	logic [9:0] x;
 	logic [8:0] y;
 	logic [7:0] r, g, b;
+	logic [31:0] div_clk;
 	
-
+	logic [1:0] data_in;
 	
-	// temp
-	logic done;
+	clock_divider div (.clock(CLOCK_50), .divided_clocks(div_clk));
 	
-	video_driver #(.WIDTH(640), .HEIGHT(480))
-		vid (.CLOCK_50, .reset, .x, .y, .r, .g, .b,
+	video_driver #(.WIDTH(40), .HEIGHT(30))
+		vid (.CLOCK_50, .reset(SW[9]), .x, .y, .r, .g, .b,
 			 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
 			 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 	
-	chunk_ctrl cc (.clk(CLOCK_50), .chunk_reset(SW[9]), .x, .y, .r, .g, .b);
+	pixel_memory pm (.clk(CLOCK_50), .reset(SW[9]), .x, .y, .r, .g, .b);
 	
 	assign HEX0 = '1;
 	assign HEX1 = '1;
@@ -40,7 +40,7 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW,
 	assign HEX3 = '1;
 	assign HEX4 = '1;
 	assign HEX5 = '1;
-	assign reset = 0;
+
 	
 endmodule  // DE1_SoC
 
@@ -58,15 +58,18 @@ module DE1_SoC_testbench ();
 	DE1_SoC dut (.*);
 	
 	// create simulated clock
-	parameter T = 20;
+	parameter CLOCK_PERIOD = 100;
 	initial begin
 		CLOCK_50 <= 0;
-		forever #(T/2) CLOCK_50 <= ~CLOCK_50;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
 	end  // clock initial
 	
 	// simulated inputs
 	initial begin
-		
+		@(posedge CLOCK_50);
+		SW[9] <= 1'b1; repeat (3) @(posedge CLOCK_50);
+		SW[9] <= 1'b0; @(posedge CLOCK_50);
+		repeat (1000) @(posedge CLOCK_50);
 		$stop();
 	end  // inputs initial
 	

@@ -1,0 +1,20 @@
+module pulse_flip_flop (
+    input logic clk,
+    input logic reset,
+    input logic input_signal,
+    output logic output_pulse
+);
+    logic edge_detected;
+
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset) begin
+            edge_detected <= 1'b0;
+        end else begin
+            // Edge detection
+            edge_detected <= input_signal & ~$past(input_signal);
+
+            // Output pulse generation
+            output_pulse <= edge_detected;
+        end
+    end
+endmodule

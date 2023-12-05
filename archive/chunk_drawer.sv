@@ -21,7 +21,7 @@ module chunk_drawer #(parameter CHUNK_SIZE=16) (clk, reset, data_in, x_chunk, y_
 			x <= (x_chunk * CHUNK_SIZE) + count_x;
 			y <= (y_chunk * CHUNK_SIZE) + count_y;
 		
-			if (count_x < 4'b1111 & count_y < 4'b1111) count_x <= count_x + 1;
+			if (count_x < 4'b1111 & count_y <= 4'b1111) count_x <= count_x + 1;
 			else if (count_x == 4'b1111 & count_y < 4'b1111) begin
 				count_y <= count_y + 1;
 				count_x <= 4'b0000;
@@ -29,9 +29,9 @@ module chunk_drawer #(parameter CHUNK_SIZE=16) (clk, reset, data_in, x_chunk, y_
 			
 			case (data_in)
 				2'b00: begin
-					r <= 8'h00;
-					g <= 8'h00;
-					b <= 8'h00;
+					r <= 8'hb7;
+					g <= 8'hb7;
+					b <= 8'hb7;
 				end
 				2'b01: begin
 					r <= 8'hB2;
@@ -39,18 +39,18 @@ module chunk_drawer #(parameter CHUNK_SIZE=16) (clk, reset, data_in, x_chunk, y_
 					b <= 8'hF2;
 				end
 				2'b10: begin
-					if (count_x < 2 | count_y < 2 | count_x > 13 | count_y > 13) begin
+					if (count_x < 4 | count_y < 4 | count_x > 11 | count_y > 11) begin
 						r <= 8'hC7;
 						g <= 8'hB8;
 						b <= 8'hE4;
 					end else begin
-						r <= 8'h00;
-						g <= 8'h00;
-						b <= 8'h00;
+						r <= 8'hb7;
+						g <= 8'hb7;
+						b <= 8'hb7;
 					end
 				end
 				2'b11: begin
-					if (count_x < 2 | count_y < 2 | count_x > 13 | count_y > 13) begin
+					if (count_x < 4 | count_y < 4 | count_x > 11 | count_y > 11) begin
 						r <= 8'hC7;
 						g <= 8'hB8;
 						b <= 8'hE4;

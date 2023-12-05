@@ -21,162 +21,141 @@
 # 
 # vlog "D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
+# Start time: 20:08:42 on Dec 03,2023
 # vlog -reportprogress 300 D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo 
 # -- Compiling module CLOCK25_PLL
 # 
 # Top level modules:
 # 	CLOCK25_PLL
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
+# Start time: 20:08:42 on Dec 03,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v 
 # -- Compiling module altera_up_avalon_video_vga_timing
 # 
 # Top level modules:
 # 	altera_up_avalon_video_vga_timing
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/incrementor.sv}
+# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/clock_divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/incrementor.sv 
-# -- Compiling module incrementor
-# -- Compiling module incrementor_tb
+# Start time: 20:08:42 on Dec 03,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/clock_divider.sv 
+# -- Compiling module clock_divider
 # 
 # Top level modules:
-# 	incrementor
-# 	incrementor_tb
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/chunk_drawer.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/chunk_drawer.sv 
-# -- Compiling module chunk_drawer
-# -- Compiling module chunk_drawer_tb
-# 
-# Top level modules:
-# 	chunk_drawer_tb
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# 	clock_divider
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/chunk_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
+# Start time: 20:08:42 on Dec 03,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/chunk_memory.sv 
 # -- Compiling module chunk_memory
-# -- Compiling module chunk_memory_tb
 # 
 # Top level modules:
-# 	chunk_memory_tb
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/chunk_ctrl.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/chunk_ctrl.sv 
-# -- Compiling module chunk_ctrl
-# -- Compiling module chunk_ctrl_tb
-# 
-# Top level modules:
-# 	chunk_ctrl_tb
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# 	chunk_memory
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/video_driver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
+# Start time: 20:08:42 on Dec 03,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/video_driver.sv 
 # -- Compiling module video_driver
 # 
 # Top level modules:
 # 	video_driver
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371_lab6 {D:/Documents/ee_371_lab6/DE1_SoC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:45:22 on Dec 02,2023
+# Start time: 20:08:42 on Dec 03,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371_lab6" D:/Documents/ee_371_lab6/DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SoC_testbench
 # 
 # Top level modules:
 # 	DE1_SoC_testbench
-# End time: 17:45:22 on Dec 02,2023, Elapsed time: 0:00:00
+# End time: 20:08:42 on Dec 03,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.chunk_ctrl_tb
-# vsim work.chunk_ctrl_tb 
-# Start time: 17:45:46 on Dec 02,2023
+vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_lnsim
+# vsim -gui -l msim_transcript work.DE1_SoC_testbench -L altera_lnsim 
+# Start time: 20:09:12 on Dec 03,2023
 # Loading sv_std.std
-# Loading work.chunk_ctrl_tb
-# Loading work.chunk_drawer
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.video_driver
+# Loading work.CLOCK25_PLL
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading work.altera_up_avalon_video_vga_timing
 # Loading work.chunk_memory
-# Loading work.incrementor
-# Loading work.chunk_ctrl
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/x', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/y', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/r', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/g', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/b', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-add wave -position end  sim:/chunk_ctrl_tb/dut_incr/draw_x_chunk
-add wave -position end  sim:/chunk_ctrl_tb/dut_incr/draw_y_chunk
-add wave -position end  sim:/chunk_ctrl_tb/clk
-add wave -position end  sim:/chunk_ctrl_tb/chunk_reset
-add wave -position end  sim:/chunk_ctrl_tb/draw_done
-add wave -position end  sim:/chunk_ctrl_tb/draw_out
-add wave -position end  sim:/chunk_ctrl_tb/draw_x_chunk
-add wave -position end  sim:/chunk_ctrl_tb/draw_y_chunk
-add wave -position end  sim:/chunk_ctrl_tb/load_drawer
+# Loading altera_lnsim.dps_extra_kick
+# Loading altera_lnsim.dprio_init
+# Loading altera_lnsim.altera_generic_pll_functions
+# Loading altera_lnsim.generic_pll
+# ** Warning: (vsim-3017) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/c25_gen/clock25_pll_altera_pll_altera_pll_i_639 File: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) D:/Documents/ee_371_lab6/CLOCK25_PLL_sim/CLOCK25_PLL.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# ** Warning: (vsim-3015) D:/Documents/ee_371_lab6/video_driver.sv(119): [PCDPC] - Port size (10) does not match connection size (8) for port 'vga_red'. The port definition is at: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v(71).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/video File: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
+# ** Warning: (vsim-3015) D:/Documents/ee_371_lab6/video_driver.sv(119): [PCDPC] - Port size (10) does not match connection size (8) for port 'vga_green'. The port definition is at: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v(72).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/video File: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
+# ** Warning: (vsim-3015) D:/Documents/ee_371_lab6/video_driver.sv(119): [PCDPC] - Port size (10) does not match connection size (8) for port 'vga_blue'. The port definition is at: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v(73).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/vid/video File: D:/Documents/ee_371_lab6/altera_up_avalon_video_vga_timing.v
+add wave -position end  sim:/DE1_SoC_testbench/dut/vid/x
+add wave -position end  sim:/DE1_SoC_testbench/dut/vid/y
+add wave -position 0  sim:/DE1_SoC_testbench/dut/vid/reset
+add wave -position 0  sim:/DE1_SoC_testbench/dut/vid/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/dut/cm/r
+add wave -position end  sim:/DE1_SoC_testbench/dut/cm/g
+add wave -position end  sim:/DE1_SoC_testbench/dut/cm/b
+add wave -position 4  sim:/DE1_SoC_testbench/dut/cm/draw_x_chunk
+add wave -position 5  sim:/DE1_SoC_testbench/dut/cm/draw_y_chunk
+add wave -position 2  sim:/DE1_SoC_testbench/dut/cm/clk
+add wave -position 3  sim:/DE1_SoC_testbench/dut/cm/reset
 run -all
-# ** Note: $stop    : D:/Documents/ee_371_lab6/chunk_ctrl.sv(60)
-#    Time: 30150 ps  Iteration: 1  Instance: /chunk_ctrl_tb
-# Break in Module chunk_ctrl_tb at D:/Documents/ee_371_lab6/chunk_ctrl.sv line 60
-add wave -position 2  sim:/chunk_ctrl_tb/dut_cm/reset
-add wave -position 3  sim:/chunk_ctrl_tb/dut_incr/reset
-restart -f
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/x', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/y', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/r', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/g', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/b', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-run -all
-# ** Note: $stop    : D:/Documents/ee_371_lab6/chunk_ctrl.sv(60)
-#    Time: 30150 ps  Iteration: 1  Instance: /chunk_ctrl_tb
-# Break in Module chunk_ctrl_tb at D:/Documents/ee_371_lab6/chunk_ctrl.sv line 60
-add wave -position end  sim:/chunk_ctrl_tb/dut_incr/draw_x_chunk
-add wave -position end  sim:/chunk_ctrl_tb/dut_incr/draw_y_chunk
-add wave -position end  sim:/chunk_ctrl_tb/dut_cm/stored_pattern
-add wave -position end  sim:/chunk_ctrl_tb/dut_cm/ram
-add wave -position 6  sim:/chunk_ctrl_tb/dut_cm/load_drawer
-add wave -position 6  sim:/chunk_ctrl_tb/dut_cd/done
-add wave -position 8  sim:/chunk_ctrl_tb/dut_cm/draw_out
-restart -f
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/x', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/y', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/r', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/g', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-# ** Warning: (vsim-3839) D:/Documents/ee_371_lab6/chunk_ctrl.sv(48): Variable '/chunk_ctrl_tb/b', driven via a port connection, is multiply driven. See D:/Documents/ee_371_lab6/chunk_ctrl.sv(37).
-#    Time: 0 ps  Iteration: 0  Instance: /chunk_ctrl_tb/dut File: D:/Documents/ee_371_lab6/chunk_ctrl.sv
-run -all
-# ** Note: $stop    : D:/Documents/ee_371_lab6/chunk_ctrl.sv(60)
-#    Time: 30150 ps  Iteration: 1  Instance: /chunk_ctrl_tb
-# Break in Module chunk_ctrl_tb at D:/Documents/ee_371_lab6/chunk_ctrl.sv line 60
-# End time: 18:18:28 on Dec 02,2023, Elapsed time: 0:32:42
-# Errors: 0, Warnings: 15
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (DE1_SoC_testbench.dut.vid.c25_gen.clock25_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = DE1_SoC_testbench.dut.vid.c25_gen.clock25_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 25 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 20000.000000
+# Info: output_clock_low_period = 20000.000000
+# Info: hierarchical_name = DE1_SoC_testbench.dut.vid.c25_gen.clock25_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
+# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# ** Note: $stop    : D:/Documents/ee_371_lab6/DE1_SoC.sv(75)
+#    Time: 100450 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at D:/Documents/ee_371_lab6/DE1_SoC.sv line 75
+# End time: 20:51:31 on Dec 03,2023, Elapsed time: 0:42:19
+# Errors: 0, Warnings: 25

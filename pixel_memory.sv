@@ -1,38 +1,37 @@
-module chunk_memory #(parameter CHUNK_SIZE=16)
-							(clk, reset, data_in, write_x_chunk, write_y_chunk, 
-							ctrl_x_chunk, ctrl_y_chunk, draw_x_chunk, draw_y_chunk, 
-							draw_done, load_drawer, ctrl_out, draw_out);
-	input logic clk, reset, draw_done;
-	input logic [1:0] data_in;
-	input logic [5:0] write_x_chunk, ctrl_x_chunk, draw_x_chunk;
-	input logic [4:0] write_y_chunk, ctrl_y_chunk, draw_y_chunk;
-	output logic load_drawer;
-	output logic [1:0] ctrl_out, draw_out;
+module pixel_memory (clk, reset, x, y, r, g, b);
+	input logic clk, reset;
+	input logic [9:0] x;
+	input logic [8:0] y;
+	output logic [7:0] r, g, b;
 	
-	logic ram [1200:0];
-	logic stored_pattern [1200:0];
+	logic ram [1199:0];
+	logic stored_pattern [1199:0];
 	
 	initial begin
-		$readmemb("chunk_memory.mif", stored_pattern);
+		$readmemb("pixel_memory.mif", stored_pattern);
 	end
 	
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			ram <= stored_pattern;
-			load_drawer <= 1'b0;
-		end
-		else begin
-			ram[(write_y_chunk * CHUNK_SIZE) + write_x_chunk] <= data_in[1];
-			if (draw_done) load_drawer <= 1'b1;
-			else if (load_drawer == 1'b1) load_drawer <= 1'b0;
+		end else begin
+			case (ram[(y * 40) + x])
+				1'b0: begin
+					r <= 8'h00;
+					g <= 8'h00;
+					b <= 8'h00;
+				end
+				1'b1: begin
+					r <= 8'hB2;
+					g <= 8'hE1;
+					b <= 8'hF2;
+				end
+			endcase
 		end
 	end
-	
-	assign ctrl_out = {1'b0, ram[(ctrl_y_chunk * CHUNK_SIZE) + ctrl_x_chunk]};
-	assign draw_out = {1'b0, ram[(draw_y_chunk * CHUNK_SIZE) + draw_x_chunk]};
-
 endmodule
 
+/*
 module chunk_memory_tb ();
 	parameter CHUNK_SIZE = 16;
 	
@@ -96,3 +95,4 @@ module chunk_memory_tb ();
 		$stop;
 	end
 endmodule
+*/
